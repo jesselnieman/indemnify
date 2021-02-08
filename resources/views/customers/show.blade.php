@@ -156,19 +156,19 @@
                                 <div class="grid grid-cols-4 gap-1 text-sm">
                                     <div class="">
                                         <div class="px-4 py-1 font-semibold">Producer</div>
-                                        <div class="px-4">Jesse Nieman</div>
+                                        <div class="px-4">{{ $customer->producer }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">CSR</div>
-                                        <div class="px-4">Jesse Nieman</div>
+                                        <div class="px-4">{{ $customer->csr }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">Status</div>
-                                        <div class="px-4">Active</div>
+                                        <div class="px-4">{{ $customer->status }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">Line</div>
-                                        <div class="px-4">Personal</div>
+                                        <div class="px-4">{{ $customer->line }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -193,31 +193,31 @@
                                 <div class="grid grid-cols-4 gap-1 text-sm">
                                     <div class="">
                                         <div class="px-4 py-1 font-semibold">Marital Status</div>
-                                        <div class="px-4">Married</div>
+                                        <div class="px-4">{{ $customer->martial_status }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">Anniversary</div>
-                                        <div class="px-4">Feb 06, 1998</div>
+                                        <div class="px-4">{{ $customer->anniversary_date }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">SSN</div>
-                                        <div class="px-4">123-45-6789</div>
+                                        <div class="px-4">{{ $customer->ssn }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">Gender</div>
-                                        <div class="px-4">Female</div>
+                                        <div class="px-4">{{ $customer->gender }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">Employer</div>
-                                        <div class="px-4">Southeastern Appliance</div>
+                                        <div class="px-4">{{ $customer->employer }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">Occupation</div>
-                                        <div class="px-4">Sales</div>
+                                        <div class="px-4">{{ $customer->occupation }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">Hire Date</div>
-                                        <div class="px-4">Feb 10, 2010</div>
+                                        <div class="px-4">{{ $customer->hire_date }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -242,19 +242,19 @@
                                 <div class="grid grid-cols-4 gap-1 text-sm">
                                     <div class="">
                                         <div class="px-4 py-1 font-semibold">License Number</div>
-                                        <div class="px-4">5550-5266-52662-0</div>
+                                        <div class="px-4">{{ $customer->license_number }}</div>
                                     </div>
                                     <div class="">
                                         <div class="px-4 py-1 font-semibold">License State</div>
-                                        <div class="px-4">MD</div>
+                                        <div class="px-4">{{ $customer->license_state }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">Issued Date</div>
-                                        <div class="px-4">Feb 06, 1998</div>
+                                        <div class="px-4">{{ $customer->license_issue_date }}</div>
                                     </div>
                                     <div class="pb-2">
                                         <div class="px-4 py-1 font-semibold">Expiration Date</div>
-                                        <div class="px-4">Feb 06, 1998</div>
+                                        <div class="px-4">{{ $customer->license_expiration_date }}</div>
                                     </div>
                                 </div>
                             </div>
