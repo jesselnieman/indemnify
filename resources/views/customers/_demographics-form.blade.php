@@ -1,9 +1,16 @@
 <div class="pt-2">
     <label for="marital_status" class="text-sm text-gray-500">{{ __('Marital Status') }}</label>
-    <input id="marital_status" type="text" 
+    <select id="marital_status" type="text" 
             class="mt-1 block w-full rounded border-gray-300 focus:border-blue-100 @error('marital_status') is-invalid @enderror" 
             name="marital_status" value="{{ old('marital_status') }}" autocomplete="marital_status" autofocus>
-
+        <option value=""></option>
+        <option value="">Single</option>
+        <option value="">Married</option>
+        <option value="">Widowed</option>
+        <option value="">Domestic Partner</option>
+        <option value="">Divorced</option>
+    </select>
+    
     @error('marital_status')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>
