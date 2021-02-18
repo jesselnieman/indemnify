@@ -79,8 +79,8 @@ class CustomerController extends Controller
     {
         $customer = Customer::find($id);
 
-        return view('customers.edit', compact('customer'));
-        //dd('Edit');
+        //return view('customers.edit', compact('customer'));
+        dd('Edit');
     }
 
     /**
@@ -103,6 +103,10 @@ class CustomerController extends Controller
      */
     public function destroy(Customer $customer)
     {
+        // This method does not delete the record. 
+        // The record's status field is updated to 'inactive'
+        // and an inactive date is recorded
+        
         $customer = Customer::find($id);
         $customer->delete();
 
