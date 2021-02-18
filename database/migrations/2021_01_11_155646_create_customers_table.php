@@ -42,7 +42,7 @@ class CreateCustomersTable extends Migration
             $table->string('employer')->nullable();
             $table->string('occupation')->nullable();
             $table->date('hire_date')->nullable();
-            $table->string('license_number')->nullable()->nullable();
+            $table->string('license_number')->nullable();
             $table->string('license_state')->nullable();
             $table->string('license_issue_date')->nullable();
             $table->string('license_expiration_date')->nullable();

@@ -1,5 +1,8 @@
 <div class="pt-2">
     <label for="first_name" class="text-sm text-gray-500">{{ __('First Name') }}</label>
+    <span class="text-red-500 required-dot">
+        *
+    </span>
     <input id="first_name" type="text" 
             class="mt-1 block w-full rounded border-gray-300 focus:border-blue-100 @error('first_name') is-invalid @enderror" 
             name="first_name" value="{{ old('first_name') }}" required autocomplete="first_name" autofocus>
@@ -26,6 +29,9 @@
 
 <div class="pt-2">
     <label for="last_name" class="text-sm text-gray-500">{{ __('Last Name') }}</label>
+    <span class="text-red-500 required-dot">
+        *
+    </span>
     <input id="last_name" type="text" 
             class="mt-1 block w-full rounded border-gray-300 focus:border-blue-100 @error('last_name') is-invalid @enderror" 
             name="last_name" value="{{ old('last_name') }}" required autocomplete="last_name" autofocus>
@@ -41,7 +47,7 @@
     <label for="email" class="text-sm text-gray-500">{{ __('Email') }}</label>
     <input id="email" type="text" 
             class="mt-1 block w-full rounded border-gray-300 focus:border-blue-100 @error('email') is-invalid @enderror" 
-            name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+            name="email" value="{{ old('email') }}" autocomplete="email" autofocus>
 
     @error('email')
         <span class="invalid-feedback" role="alert">
@@ -78,6 +84,9 @@
 
 <div class="pt-2">
     <label for="address_line_one" class="text-sm text-gray-500">{{ __('Address Line 1') }}</label>
+    <span class="text-red-500 required-dot">
+        *
+    </span>
     <input id="address_line_one" type="text" 
             class="mt-1 block w-full rounded border-gray-300 focus:border-blue-100 @error('address_line_one') is-invalid @enderror" 
             name="address_line_one" value="{{ old('address_line_one') }}" required autocomplete="address_line_one" autofocus>
@@ -104,9 +113,12 @@
 
 <div class="pt-2">
     <label for="city" class="text-sm text-gray-500">{{ __('City') }}</label>
+    <span class="text-red-500 required-dot">
+        *
+    </span>
     <input id="city" type="text" 
             class="mt-1 block w-full rounded border-gray-300 focus:border-blue-100 @error('city') is-invalid @enderror" 
-            name="city" value="{{ old('city') }}" autocomplete="city" autofocus>
+            name="city" value="{{ old('city') }}" required autocomplete="city" autofocus>
 
     @error('city')
         <span class="invalid-feedback" role="alert">
@@ -117,9 +129,12 @@
 
 <div class="pt-2">
     <label for="state" class="text-sm text-gray-500">{{ __('State') }}</label>
+    <span class="text-red-500 required-dot">
+        *
+    </span>
     <input id="state" type="text" 
             class="mt-1 block w-full rounded border-gray-300 focus:border-blue-100 @error('state') is-invalid @enderror" 
-            name="state" value="{{ old('state') }}" autocomplete="state" autofocus>
+            name="state" value="{{ old('state') }}" required autocomplete="state" autofocus>
 
     @error('state')
         <span class="invalid-feedback" role="alert">
@@ -130,9 +145,12 @@
 
 <div class="pt-2">
     <label for="zip" class="text-sm text-gray-500">{{ __('Zip Code') }}</label>
+    <span class="text-red-500 required-dot">
+        *
+    </span>
     <input id="zip" type="text" 
             class="mt-1 block w-full rounded border-gray-300 focus:border-blue-100 @error('zip') is-invalid @enderror" 
-            name="zip" value="{{ old('zip') }}" autocomplete="zip" autofocus>
+            name="zip" value="{{ old('zip') }}" required autocomplete="zip" autofocus>
 
     @error('zip')
         <span class="invalid-feedback" role="alert">
